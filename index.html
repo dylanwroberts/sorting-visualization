@@ -12,21 +12,25 @@
     <div id="app" class="container">
       <div class="row">
         <div id="choose-sort" class="four columns">
+          <div id="logo">
+            <h5>Sorting Visualization</h5>
+            <p>by Dylan Roberts</p>
+          </div>
           <div class="option" @click="run(bubble)">Bubble Sort</div>
-          <div class="option">Insertion Sort</div>
-          <div class="option">Bogo Sort (worst algorithm)</div>
-          <div class="option">Quick Sort (fastest)</div>
-          <div class="option">Selection Sort</div>
-          <div class="option">Heap Sort</div>
-          <div class="option">Counting Sort</div>
-          <div class="option">TimSort</div>
-          <div class="option">Merge Sort</div>
-          <div class="option">Pigeonhole Sort</div>
-          <div class="option">Cocktail Sort</div>
-          <div class="option">Gnome Sort</div>
+          <div class="disabled">Insertion Sort</div>
+          <div class="disabled">Bogo Sort (worst algorithm)</div>
+          <div class="disabled">Quick Sort (fastest)</div>
+          <div class="disabled">Selection Sort</div>
+          <div class="disabled">Heap Sort</div>
+          <div class="disabled">Counting Sort</div>
+          <div class="disabled">TimSort</div>
+          <div class="disabled">Merge Sort</div>
+          <div class="disabled">Pigeonhole Sort</div>
+          <div class="disabled">Cocktail Sort</div>
+          <div class="disabled">Gnome Sort</div>
         </div>
         <div id="display" class="eight columns">
-          <div id="info"><a href="https://github.com/dylanwroberts"><img src="github.svg" alt="github logo" height="25"></a></div>
+          <div id="info"><a href="https://github.com/dylanwroberts"><img src="github.svg" alt="github logo" height="20"></a></div>
           <div class="bar" v-for="element in bars" :style="{ height: element * 20 + 'px' }"></div>
           <button @click="randomize">randomize</button>
         </div>

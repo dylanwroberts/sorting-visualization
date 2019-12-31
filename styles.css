@@ -9,6 +9,10 @@
   text-align: right;
 }
 
+#logo {
+  padding: 25px 0 25px 20px;
+}
+
 #display {
   border-right: 1px solid #E1DFE5;
   height: 100vh;
@@ -16,7 +20,6 @@
 }
 
 #choose-sort {
-  padding-top: 50px;
   border-left: 1px solid #E1DFE5;
   border-right: 1px solid #E1DFE5;
   height: 100vh;
@@ -31,16 +34,26 @@
   box-sizing: border-box;
 }
 
+h5 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
 .option {
-  padding: 8px 8px 8px 15px;
+  padding: 8px 8px 8px 20px;
   background-color: white;
+  user-select: none;
+}
+
+.disabled {
+  color: #E1DFE5;
+  padding: 8px 8px 8px 20px;
   user-select: none;
 }
 
 .option:hover {
   background-color: #FDEFE0;
-}
-
-.fa-github {
-  font-size: 4em;
 }
